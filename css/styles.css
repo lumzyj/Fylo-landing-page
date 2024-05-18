@@ -125,15 +125,16 @@ nav ul li a {
 }
 
 .review-box {
-  width: 60%;
+  width: 80%;
   height: 60%;
   border: 1px solid;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .avatar {
-  width: 30%;
-  border-radius: 60%;
+  width: 25%;
+  border-radius: 50%;
 }
 
 .review-image {
@@ -143,3 +144,12 @@ nav ul li a {
 .review-text{
   font-weight: lighter;
 }
+
+.fyo-link{
+  color: #41A494;
+  text-decoration: none;
+}
+.tag{
+margin-left: 10px;
+  
+} 
