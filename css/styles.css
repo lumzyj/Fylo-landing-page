@@ -77,16 +77,18 @@ nav ul li a {
 
 .email-input {
   padding: 10px;
-  width: 50%;
+  width: 60%;
   margin-bottom: 20px; /* Add some spacing at the bottom */
-  border: 1px solid #bfbfbf; /* Use specified color */
+  border: 1px solid; /* Use specified color */
+  border-radius: 3px;
 }
 
 .get-started-btn {
   background-color: #291fda;
   color: white; /* Text color */
+  border-radius: 3px;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 40px;
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease; /* Smooth transition */
@@ -100,6 +102,7 @@ nav ul li a {
   background: url("../images/bg-curve-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .first {
@@ -110,6 +113,20 @@ nav ul li a {
   max-width: 1440px;
   margin: auto;
   padding: 30px;
+  padding-bottom: 5rem;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
+  
+}
+
+.pro-text{
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-weight: 400, 700;
+}
+
+.pro-p, .tag{
+  color:hsl(243, 87%, 12%); ;
 }
 
 .first-pro {
@@ -125,11 +142,12 @@ nav ul li a {
 }
 
 .review-box {
-  width: 80%;
-  height: 60%;
-  border: 1px solid;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-top: 20px;
+  
 }
 
 .avatar {
@@ -141,15 +159,119 @@ nav ul li a {
   display: inline-flex;
 }
 
-.review-text{
+.review-text {
   font-weight: lighter;
 }
 
-.fyo-link{
-  color: #41A494;
+.fyo-link {
+  color: #41a494;
   text-decoration: none;
+
+ 
+ 
 }
-.tag{
-margin-left: 10px;
-  
-} 
+
+.tag {
+  margin-left: 10px;
+}
+
+.acess {
+  background-color: hsl(238, 22%, 44%);
+}
+
+.acess-fs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  padding: 30px;
+  color: #fff;
+  height: 40vh;
+}
+
+.first-acess {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 500px; /* Limit width on larger screens */
+  margin-right: 20px;
+}
+
+.header-acess{
+   font-family: "Raleway", sans-serif;
+}
+
+.second-acess {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 500px; /* Limit width on larger screens */
+  margin-right: 20px;
+}
+
+ p{
+  font-size: 16px;
+}
+
+.newsteller {
+  padding: 15px;
+  width: 80%;
+  margin-bottom: 20px; /* Add some spacing at the bottom */
+  border: 1px solid #bfbfbf; /* Use specified color */
+  border-radius: 5px;
+}
+
+.footer-container {
+  background-color: hsl(243, 87%, 12%);
+   padding: 2rem  0 4rem 0 ;
+
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 30px;
+  color: #fff;
+  height: 40vh;
+ 
+}
+
+.footer-heading, .footer-logo{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+  margin-top: 30px;
+}
+
+.footer-heading a{
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+
+}
+
+.footer-heading a:hover{
+  color:hsl(238, 22%, 44%);
+  transition: 0.3s ease-out;
+}
+
+ .logo-footer{
+  padding-bottom: 1.8rem;
+  filter: brightness(0) invert(1);
+}
+
+.icon{
+  margin-right: 0.5rem;
+}
+
+.footer-1,.footer-2,.footer-3{
+  margin-top: 6rem;
+  margin-right: 3rem;
+}
+
+@media screen and (max-width: 720px){
+  .footer{
+
+  }
+}
