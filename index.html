@@ -6,6 +6,7 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <script src="https://kit.fontawesome.com/91e2b4c90e.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,8 +24,8 @@
       </header>
     </section>
     <section class="hero">
-      <div class="first-hero">
-        <h1 class="hero-text">
+      <div class="first-hero" data-aos="fade-right">
+        <h1 class="hero-text"> 
           All your files in one secure location, accessible anywhere.
         </h1>
         <p class="hero-p">
@@ -35,13 +36,13 @@
           <button class="get-started-btn" type="submit">Get Started</button>
         </form>
       </div>
-      <div class="second-hero">
+      <div class="second-hero" data-aos="fade-left">
         <img src="./images/illustration-1.svg" alt="Illustration" class="hero-img">
       </div>
     </section>
     <section class="productive">
       <div class="first">
-        <div class="first-pro">
+        <div class="first-pro" data-aos="fade-up">
           <h1 class="pro-text">Stay productive, wherever you are</h1>
           <p class="pro-p">
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
@@ -58,14 +59,14 @@
             <p class="pro-p">
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
             </p>
-            <div class="review-image">
+            <div class="review-image" >
               <img src="./images/avatar-testimonial.jpg" alt="Avatar" class="avatar">
               <h4 class="tag">Kyle Burton<br>
               <span class="review-text">Founder & CEO, Huddle</span></h4>
             </div>
           </div>
         </div>
-        <div class="second-pro">
+        <div class="second-pro" data-aos="fade-up-left">
           <img src="./images/illustration-2.svg" alt="Illustration" class="hero-img2">
         </div>
       </div>
@@ -110,5 +111,18 @@
       </div>
     </div>
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+      
+        disable: 'mobile',
+        offset: 100, 
+        duration: 1000, 
+        easing: 'ease-in-out', 
+        once: true 
+      });
+    });
+  </script>
 </body>
 </html>
